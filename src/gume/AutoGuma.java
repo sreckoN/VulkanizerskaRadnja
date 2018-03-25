@@ -11,22 +11,22 @@ package gume;
 public class AutoGuma {
 	
 	/**
-	 * Cuva naziv marke gume
+	 * Naziv marke gume
 	 */
 	private String markaModel = null;
 	
 	/**
-	 * Cuva precnik gume
+	 * Precnik gume
 	 */
 	private int precnik = 0;
 	
 	/**
-	 * Cuva sirinu gume
+	 * Sirina gume
 	 */
 	private int sirina = 0;
 	
 	/**
-	 * Cuva visinu gume
+	 * Visina gume
 	 */
 	private int visina = 0;
 	
@@ -105,11 +105,22 @@ public class AutoGuma {
 			throw new RuntimeException("Visina van opsega");
 		this.visina = visina;
 	}
+	
+	/**
+	 * Prevodi atribute klase u String vrednosti
+	 * @return String sa atributima klase
+	 */
 	@Override
 	public String toString() {
 		return "AutoGuma [markaModel=" + markaModel + ", precnik=" + precnik +
 				", sirina=" + sirina + ", visina=" + visina + "]";
 	}
+	
+	/**
+	 * Poredi dve gume po marci, modelu i dimenzijama
+	 * @param objekat sa kojim treba porediti
+	 * @return true ako su objekti isti, u suprotnom false
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
