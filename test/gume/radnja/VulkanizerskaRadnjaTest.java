@@ -32,7 +32,7 @@ public class VulkanizerskaRadnjaTest {
 	@Test
 	public void testDodajGumu() {
 		v.dodajGumu(a);
-		assertEquals(1, v.pronadjiGumu("Michelin").size());
+		assertEquals(1, v.getGume().size());
 	}
 
 	@Test (expected = java.lang.NullPointerException.class)

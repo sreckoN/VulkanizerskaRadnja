@@ -47,4 +47,12 @@ public class VulkanizerskaRadnja {
 		return novaLista;
 	}
 
+	/**
+	 * Vraca listu guma koje su dostupne u radnji
+	 * @return lista sa gumama
+	 */
+	LinkedList<AutoGuma> getGume() {
+		return gume;
+	}
+
 }
